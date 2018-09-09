@@ -21,6 +21,7 @@
 private _listBoxData = LIST_CHARGE lbData (lbCurSel LIST_CHARGE);
 if (isNil "_listBoxData" || {_listBoxData == ""}) exitWith {ERROR("lbCurSel out of bounds or no data");};
 private _muzzleVelocity = parseNumber _listBoxData;
+hint format["velocity: %1" , _muzzleVelocity];
 
 private _airFriction = if (GVAR(airResistanceEnabled)) then {MK6_82mm_AIR_FRICTION} else {0};
 

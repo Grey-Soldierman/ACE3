@@ -11,7 +11,14 @@ class cfgMagazines {
         model = QPATHTOF(data\l16_ammo_he.p3d);
         picture = QPATHTOF(UI\w_l16_ammo_he_ca.paa);
         mass = 50;
+        initSpeed = 10;
+        GVAR(useCharges) = 1;
+        GVAR(numCharges) = 4;
     };
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE,"81MM HE",200,1,0.25);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE,"81MM HE",200,2,0.50);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE,"81MM HE",200,3,0.75);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE,"81MM HE",200,4,1);
     class 8Rnd_82mm_Mo_Smoke_white;
     class ACE_1Rnd_82mm_Mo_Smoke: 8Rnd_82mm_Mo_Smoke_white {
         count = 1;
@@ -24,7 +31,14 @@ class cfgMagazines {
         model = QPATHTOF(data\l16_ammo_smk_white.p3d);
         picture = QPATHTOF(UI\w_l16_ammo_smk_white_ca.paa);
         mass = 50;
+        initSpeed = 10;
+        GVAR(useCharges) = 1;
+        GVAR(numCharges) = 4;
     };
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke,"81MM Smoke",200,1,0.25);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke,"81MM Smoke",200,2,0.50);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke,"81MM Smoke",200,3,0.75);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke,"81MM Smoke",200,4,1);
     class 8Rnd_82mm_Mo_Flare_white;
     class ACE_1Rnd_82mm_Mo_Illum: 8Rnd_82mm_Mo_Flare_white {
         count = 1;
@@ -37,7 +51,14 @@ class cfgMagazines {
         model = QPATHTOF(data\l16_ammo_illum.p3d);
         picture = QPATHTOF(UI\w_l16_ammo_illum_ca.paa);
         mass = 50;
+        initSpeed = 10;
+        GVAR(useCharges) = 1;
+        GVAR(numCharges) = 4;
     };
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum,"81MM Illum",200,1,0.25);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum,"81MM Illum",200,2,0.50);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum,"81MM Illum",200,3,0.75);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum,"81MM Illum",200,4,1);
     class 8Rnd_82mm_Mo_guided;
     class ACE_1Rnd_82mm_Mo_HE_Guided: 8Rnd_82mm_Mo_guided {
         count = 1;
@@ -50,7 +71,14 @@ class cfgMagazines {
         model = QPATHTOF(data\l16_ammo_he.p3d);
         picture = QPATHTOF(UI\w_l16_ammo_he_ca.paa);
         mass = 50;
+        initSpeed = 10;
+        GVAR(useCharges) = 1;
+        GVAR(numCharges) = 4;
     };
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_Guided,"81MM HE Guided",200,1,0.25);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_Guided,"81MM HE Guided",200,2,0.50);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_Guided,"81MM HE Guided",200,3,0.75);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_Guided,"81MM HE Guided",200,4,1);
     class 8Rnd_82mm_Mo_LG;
     class ACE_1Rnd_82mm_Mo_HE_LaserGuided: 8Rnd_82mm_Mo_LG {
         count = 1;
@@ -63,5 +91,12 @@ class cfgMagazines {
         model = QPATHTOF(data\l16_ammo_he.p3d);
         picture = QPATHTOF(UI\w_l16_ammo_he_ca.paa);
         mass = 50;
+        initSpeed = 10;
+        GVAR(useCharges) = 1;
+        GVAR(numCharges) = 4;
     };
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided,"81MM HE LaserGuided",200,1,0.25);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided,"81MM HE LaserGuided",200,2,0.50);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided,"81MM HE LaserGuided",200,3,0.75);
+    MACRO_GENERATE_CHARGE_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided,"81MM HE LaserGuided",200,4,1);
 };

@@ -11,6 +11,19 @@ class CfgVehicles {
                     exceptions[] = {"notOnMap", "isNotInside", "isNotSitting"};
                 };
             };
+            class ACE_Ammunition {
+                displayName = "Ammunition";
+                condition = QUOTE(true);
+                exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                statement = "";
+                showDisabled = 1;
+                icon = "";
+                class GVAR(prepRound) {
+                    displayName = "Prepare round";
+                    condition = QUOTE(_this call FUNC(canPrepRound));
+                    statement = QUOTE(_this call FUNC(prepRound));
+                };
+            };
         };
     };
 

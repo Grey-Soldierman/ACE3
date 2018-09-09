@@ -19,13 +19,19 @@ class CfgWeapons {
     };
     class ACE_mortar_82mm: mortar_82mm {
         author = ECSTRING(common,ACETeam);
-        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum",
-            "ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided"};
-        modes[] = {"Single1","Single2","Single3"};
+        magazines[] = {
+            "ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_HE_Charge_1", "ACE_1Rnd_82mm_Mo_HE_Charge_2", "ACE_1Rnd_82mm_Mo_HE_Charge_3","ACE_1Rnd_82mm_Mo_HE_Charge_4"
+            "ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Smoke_Charge_1","ACE_1Rnd_82mm_Mo_Smoke_Charge_2","ACE_1Rnd_82mm_Mo_Smoke_Charge_3","ACE_1Rnd_82mm_Mo_Smoke_Charge_4",
+            "ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_Illum_Charge_1","ACE_1Rnd_82mm_Mo_Illum_Charge_2","ACE_1Rnd_82mm_Mo_Illum_Charge_3","ACE_1Rnd_82mm_Mo_Illum_Charge_4",
+            "ACE_1Rnd_82mm_Mo_HE_Guided", "ACE_1Rnd_82mm_Mo_HE_Guided_Charge_1","ACE_1Rnd_82mm_Mo_HE_Guided_Charge_2","ACE_1Rnd_82mm_Mo_HE_Guided_Charge_3","ACE_1Rnd_82mm_Mo_HE_Guided_Charge_4",
+            "ACE_1Rnd_82mm_Mo_HE_LaserGuided","ACE_1Rnd_82mm_Mo_HE_LaserGuided_Charge_1","ACE_1Rnd_82mm_Mo_HE_LaserGuided_Charge_2","ACE_1Rnd_82mm_Mo_HE_LaserGuided_Charge_3","ACE_1Rnd_82mm_Mo_HE_LaserGuided_Charge_4"
+        };
+        modes[] = {"Single1"};
         reloadTime = 0.5;
         magazineReloadTime = 0.5;
         class Single1: Single1 {
             reloadTime = 0.5;
+            artilleryCharge = 1;
         };
     };
 };
